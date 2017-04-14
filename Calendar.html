@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <style>
+        .lavendar {
+           background-color:lavender;
+       }
+   </style> <script type="text/javascript">
+   function myFunction() {
+    // if innertext === weeewwee 
+        // set innertext to january
+    // else 
+        // set innertext to weererrr
+
+        if (document.getElementById("January").innerText==="January") {
+            document.getElementById("January").innerText="weeewwe";
+
+        } 
+        else if (document.getElementById("January").innerText==="weeewwe") {
+            document.getElementById("January").innerText="January";
+        }
+       // if (document.getElementById("January").innerText="weewwe") {
+
+       // }
+       // else (document.getElementById("January").innerText="January"){
+
+       // }; 
+
+
+   }
+   function textFunction(id) {
+
+var x = document.getElementById("myText").value;
+document.getElementById("Sunday").innerHTML = x;
+   }
+</script>
+<button onclick="myFunction()">Click me</button>
+
+</head>
+<body> 
+    <div class="row">
+        <div id="January" class="col-sm-7" onclick="" style="background-color:red;">January</div>
+    </div>
+    <div id="weekone" class="row">
+        <div id="Sunday" class="col-sm-1 lavendar sunday"  style="">Sunday
+        <input type="text" id="myText" value="Some text...">
+        <button onclick="textFunction(this.parentNode.id)">Insert Text</button>
+        </div>
+        <div id="Monday" class="col-sm-1 lavendar"  ;">Monday</div>
+        <div id="Tuesday" class="col-sm-1 lavendar"  ;">Tuesday</div>
+        <div id="Wendsday" class="col-sm-1 lavendar"  ;">Wendsday</div>   
+        <div id="Thursday" class="col-sm-1 lavendar"  ;">Thursday</div>
+        <div id="Friday" class="col-sm-1 lavendar"  ;">Friday</div>
+        <div id="Saturday" class="col-sm-1 lavendar"  ;">Saturday</div>
+    </div>
+    <div id= "weektwo" class="row">
+        <div id="Sunday2" class="col-sm-1 sunday" style="background-color:orange;">Sunday</div>
+        <div id="Monday2" class="col-sm-1" style="background-color:orange;">Monday</div>
+        <div id="Tuesday2" class="col-sm-1" style="background-color:orange;">Tuesday</div>
+        <div id="Wendsday2" class="col-sm-1" style="background-color:orange;">Wendsday</div>  
+        <div id="Thursday2" class="col-sm-1" style="background-color:orange;">Thursday</div>
+        <div id="Friday2" class="col-sm-1" style="background-color:orange;">Friday</div>
+        <div id="Saturday2" class="col-sm-1" style="background-color:orange;">Saturday</div>
+    
+    </div>
+    <div id= "weekthree" class="row">
+        <div id="Sunday3" class="col-sm-1 sunday" style="background-color:orange;">Sunday</div>
+        <div id="Monday3" class="col-sm-1" style="background-color:orange;">Monday</div>
+        <div id="Tuesday3" class="col-sm-1" style="background-color:orange;">Tuesday</div>
+        <div id="Wendsday3" class="col-sm-1" style="background-color:orange;">Wendsday</div>  
+        <div id="Thursday3" class="col-sm-1" style="background-color:orange;">Thursday</div>
+        <div id="Friday3" class="col-sm-1" style="background-color:orange;">Friday</div>
+        <div id="Saturday3" class="col-sm-1" style="background-color:orange;">Saturday</div>
+    </div>
+    <div id= "weekfour" class="row">
+        <div id="Sunday4" class="col-sm-1 sunday" style="background-color:orange;">Sunday</div>
+        <div id="Monday4" class="col-sm-1" style="background-color:orange;">Monday</div>
+        <div id="Tuesday4" class="col-sm-1" style="background-color:orange;">Tuesday</div>
+        <div id="Wendsday4" class="col-sm-1" style="background-color:orange;">Wendsday</div>  
+        <div id="Thursday4" class="col-sm-1" style="background-color:orange;">Thursday</div>
+        <div id="Friday4" class="col-sm-1" style="background-color:orange;">Friday</div>
+        <div id="Saturday4" class="col-sm-1" style="background-color:orange;">Saturday</div>
+    </div>
+    <div>
+        <div id= "weekfive" class="row">
+        <div id="Sunday5" class="col-sm-1 sunday" style="background-color:orange;">Sunday</div>
+        <div id="Monday5" class="col-sm-1" style="background-color:orange;">Monday</div>
+        <div id="Tuesday5" class="col-sm-1" style="background-color:orange;">Tuesday</div>
+        <div id="Wendsday5" class="col-sm-1" style="background-color:orange;"></div>  
+        <div id="Thursday5" class="col-sm-1" style="background-color:orange;"></div>
+        <div id="Friday5" class="col-sm-1" style="background-color:orange;"></div>
+        <div id="Saturday5" class="col-sm-1" style="background-color:orange;"></div>
+    </div>
+</body>
+</html>
