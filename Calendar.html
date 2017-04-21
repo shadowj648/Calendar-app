@@ -32,10 +32,9 @@
 
 
    }
-   function textFunction(id) {
-
-var x = document.getElementById("myText").value;
-document.getElementById("Sunday").innerHTML = x;
+   function textFunction(parentNodeid, id,day) {
+var x = $('#'+parentNodeid).find('#'+id + ' #myText').val();
+document.getElementById(day).innerHTML = x;
    }
 </script>
 <button onclick="myFunction()">Click me</button>
@@ -48,52 +47,143 @@ document.getElementById("Sunday").innerHTML = x;
     <div id="weekone" class="row">
         <div id="Sunday" class="col-sm-1 lavendar sunday"  style="">Sunday
         <input type="text" id="myText" value="Some text...">
-        <button onclick="textFunction(this.parentNode.id)">Insert Text</button>
+        <button onclick="textFunction(this.parentNode.parentNode.id, this.parentNode.id,'Sunday')">Insert Text</button>
         </div>
-        <div id="Monday" class="col-sm-1 lavendar"  ;">Monday</div>
-        <div id="Tuesday" class="col-sm-1 lavendar"  ;">Tuesday</div>
-        <div id="Wendsday" class="col-sm-1 lavendar"  ;">Wendsday</div>   
-        <div id="Thursday" class="col-sm-1 lavendar"  ;">Thursday</div>
-        <div id="Friday" class="col-sm-1 lavendar"  ;">Friday</div>
-        <div id="Saturday" class="col-sm-1 lavendar"  ;">Saturday</div>
+        <div id="Monday" class="col-sm-1 lavendar"  ;">Monday
+        <input type="text" id="myText" value="Some text...">
+        <button onclick="textFunction(this.parentNode.parentNode.id, this.parentNode.id,'Monday')">Insert Text</button>
+        </div>
+
+        <div id="Tuesday" class="col-sm-1 lavendar"  ;">Tuesday
+        <input type="text" id="myText" value="Some text...">
+        <button onclick="textFunction(this.parentNode.parentNode.id, this.parentNode.id,'Tuesday')">Insert Text</button>
+        </div>
+        <div id="Wendsday" class="col-sm-1 lavendar"  ;">Wendsday
+        <input type="text" id="myText" value="Some text...">
+        <button onclick="textFunction(this.parentNode.parentNode.id, this.parentNode.id,'Wendsday')">Insert Text</button>
+        </div>   
+        <div id="Thursday" class="col-sm-1 lavendar"  ;">Thursday
+        <input type="text" id="myText" value="Some text...">
+        <button onclick="textFunction(this.parentNode.parentNode.id, this.parentNode.id,'Thursday')">Insert Text</button>
+        </div>
+        <div id="Friday" class="col-sm-1 lavendar"  ;">Friday
+        <input type="text" id="myText" value="Some text...">
+        <button onclick="textFunction(this.parentNode.parentNode.id, this.parentNode.id,'Friday')">Insert Text</button>
+        </div>
+        <div id="Saturday" class="col-sm-1 lavendar"  ;">Saturday
+        <input type="text" id="myText" value="Some text...">
+        <button onclick="textFunction(this.parentNode.parentNode.id, this.parentNode.id,'Saturday')">Insert Text</button>
+        </div>
     </div>
     <div id= "weektwo" class="row">
-        <div id="Sunday2" class="col-sm-1 sunday" style="background-color:orange;">Sunday</div>
-        <div id="Monday2" class="col-sm-1" style="background-color:orange;">Monday</div>
-        <div id="Tuesday2" class="col-sm-1" style="background-color:orange;">Tuesday</div>
-        <div id="Wendsday2" class="col-sm-1" style="background-color:orange;">Wendsday</div>  
-        <div id="Thursday2" class="col-sm-1" style="background-color:orange;">Thursday</div>
-        <div id="Friday2" class="col-sm-1" style="background-color:orange;">Friday</div>
-        <div id="Saturday2" class="col-sm-1" style="background-color:orange;">Saturday</div>
+        <div id="Sunday2" class="col-sm-1 sunday" style="background-color:orange;">Sunday
+        <input type="text" id="myText" value="Some text...">
+        <button onclick="textFunction(this.parentNode.parentNode.id, this.parentNode.id,'Sunday2')">Insert Text</button>
+        </div>
+        <div id="Monday2" class="col-sm-1" style="background-color:orange;">Monday
+        <input type="text" id="myText" value="Some text...">
+        <button onclick="textFunction(this.parentNode.parentNode.id, this.parentNode.id,'Monday2')">Insert Text</button>
+        </div>
+        <div id="Tuesday2" class="col-sm-1" style="background-color:orange;">Tuesday
+        <input type="text" id="myText" value="Some text...">
+        <button onclick="textFunction(this.parentNode.parentNode.id, this.parentNode.id,'Tuesday2')">Insert Text</button>
+        </div>
+        <div id="Wendsday2" class="col-sm-1" style="background-color:orange;">Wendsday
+        <input type="text" id="myText" value="Some text...">
+        <button onclick="textFunction(this.parentNode.parentNode.id, this.parentNode.id,'Wendsday2')">Insert Text</button>
+        </div>  
+        <div id="Thursday2" class="col-sm-1" style="background-color:orange;">Thursday
+        <input type="text" id="myText" value="Some text...">
+        <button onclick="textFunction(this.parentNode.parentNode.id, this.parentNode.id,'Thursday2')">Insert Text</button>
+        </div>
+        <div id="Friday2" class="col-sm-1" style="background-color:orange;">Friday
+        <input type="text" id="myText" value="Some text...">
+        <button onclick="textFunction(this.parentNode.parentNode.id, this.parentNode.id,'Friday2')">Insert Text</button>
+        </div>
+        <div id="Saturday2" class="col-sm-1" style="background-color:orange;">Saturday
+        <input type="text" id="myText" value="Some text...">
+        <button onclick="textFunction(this.parentNode.parentNode.id, this.parentNode.id,'Saturday2')">Insert Text</button>
+        </div>
     
     </div>
     <div id= "weekthree" class="row">
-        <div id="Sunday3" class="col-sm-1 sunday" style="background-color:orange;">Sunday</div>
-        <div id="Monday3" class="col-sm-1" style="background-color:orange;">Monday</div>
-        <div id="Tuesday3" class="col-sm-1" style="background-color:orange;">Tuesday</div>
-        <div id="Wendsday3" class="col-sm-1" style="background-color:orange;">Wendsday</div>  
-        <div id="Thursday3" class="col-sm-1" style="background-color:orange;">Thursday</div>
-        <div id="Friday3" class="col-sm-1" style="background-color:orange;">Friday</div>
-        <div id="Saturday3" class="col-sm-1" style="background-color:orange;">Saturday</div>
+        <div id="Sunday3" class="col-sm-1 sunday" style="background-color:purple;">Sunday
+        <input type="text" id="myText" value="Some text...">
+        <button onclick="textFunction(this.parentNode.parentNode.id, this.parentNode.id,'Sunday3')">Insert Text</button>
+        </div>
+        <div id="Monday3" class="col-sm-1" style="background-color:purple;">Monday
+        <input type="text" id="myText" value="Some text...">
+        <button onclick="textFunction(this.parentNode.parentNode.id, this.parentNode.id,'Monday3')">Insert Text</button>
+        </div>
+        <div id="Tuesday3" class="col-sm-1" style="background-color:purple;">Tuesday
+        <input type="text" id="myText" value="Some text...">
+        <button onclick="textFunction(this.parentNode.parentNode.id, this.parentNode.id,'Tuesday3')">Insert Text</button>
+        </div>
+        <div id="Wendsday3" class="col-sm-1" style="background-color:purple;">Wendsday
+        <input type="text" id="myText" value="Some text...">
+        <button onclick="textFunction(this.parentNode.parentNode.id, this.parentNode.id,'Wendsday3')">Insert Text</button>
+        </div>  
+        <div id="Thursday3" class="col-sm-1" style="background-color:purple;">Thursday
+        <input type="text" id="myText" value="Some text...">
+        <button onclick="textFunction(this.parentNode.parentNode.id, this.parentNode.id,'Thursday3')">Insert Text</button>
+        </div>
+        <div id="Friday3" class="col-sm-1" style="background-color:purple;">Friday
+        <input type="text" id="myText" value="Some text...">
+        <button onclick="textFunction(this.parentNode.parentNode.id, this.parentNode.id,'Friday3')">Insert Text</button>
+        </div>
+        <div id="Saturday3" class="col-sm-1" style="background-color:purple;">Saturday
+        <input type="text" id="myText" value="Some text...">
+        <button onclick="textFunction(this.parentNode.parentNode.id, this.parentNode.id,'Saturday3')">Insert Text</button>
+        </div>
     </div>
     <div id= "weekfour" class="row">
-        <div id="Sunday4" class="col-sm-1 sunday" style="background-color:orange;">Sunday</div>
-        <div id="Monday4" class="col-sm-1" style="background-color:orange;">Monday</div>
-        <div id="Tuesday4" class="col-sm-1" style="background-color:orange;">Tuesday</div>
-        <div id="Wendsday4" class="col-sm-1" style="background-color:orange;">Wendsday</div>  
-        <div id="Thursday4" class="col-sm-1" style="background-color:orange;">Thursday</div>
-        <div id="Friday4" class="col-sm-1" style="background-color:orange;">Friday</div>
-        <div id="Saturday4" class="col-sm-1" style="background-color:orange;">Saturday</div>
+        <div id="Sunday4" class="col-sm-1 sunday" style="background-color:blue;">Sunday
+        <input type="text" id="myText" value="Some text...">
+        <button onclick="textFunction(this.parentNode.parentNode.id, this.parentNode.id,'Sunday4')">Insert Text</button>
+        </div>
+        <div id="Monday4" class="col-sm-1" style="background-color:blue;">Monday
+        <input type="text" id="myText" value="Some text...">
+        <button onclick="textFunction(this.parentNode.parentNode.id, this.parentNode.id,'Monday4')">Insert Text</button>
+        </div>
+        <div id="Tuesday4" class="col-sm-1" style="background-color:blue;">Tuesday
+        <input type="text" id="myText" value="Some text...">
+        <button onclick="textFunction(this.parentNode.parentNode.id, this.parentNode.id,'Tuesday4')">Insert Text</button>
+        </div>
+        <div id="Wendsday4" class="col-sm-1" style="background-color:blue;">Wendsday
+        <input type="text" id="myText" value="Some text...">
+        <button onclick="textFunction(this.parentNode.parentNode.id, this.parentNode.id,'Wendsday4')">Insert Text</button>
+        </div>  
+        <div id="Thursday4" class="col-sm-1" style="background-color:blue;">Thursday
+        <input type="text" id="myText" value="Some text...">
+        <button onclick="textFunction(this.parentNode.parentNode.id, this.parentNode.id,'Thursday4')">Insert Text</button>
+        </div>
+        <div id="Friday4" class="col-sm-1" style="background-color:blue;">Friday
+        <input type="text" id="myText" value="Some text...">
+        <button onclick="textFunction(this.parentNode.parentNode.id, this.parentNode.id,'Friday4')">Insert Text</button>
+        </div>
+        <div id="Saturday4" class="col-sm-1" style="background-color:blue;">Saturday
+        <input type="text" id="myText" value="Some text...">
+        <button onclick="textFunction(this.parentNode.parentNode.id, this.parentNode.id,'Saturday4')">Insert Text</button>
+        </div>
     </div>
     <div>
         <div id= "weekfive" class="row">
-        <div id="Sunday5" class="col-sm-1 sunday" style="background-color:orange;">Sunday</div>
-        <div id="Monday5" class="col-sm-1" style="background-color:orange;">Monday</div>
-        <div id="Tuesday5" class="col-sm-1" style="background-color:orange;">Tuesday</div>
-        <div id="Wendsday5" class="col-sm-1" style="background-color:orange;"></div>  
-        <div id="Thursday5" class="col-sm-1" style="background-color:orange;"></div>
-        <div id="Friday5" class="col-sm-1" style="background-color:orange;"></div>
-        <div id="Saturday5" class="col-sm-1" style="background-color:orange;"></div>
+        <div id="Sunday5" class="col-sm-1 sunday" style="background-color:cyan;">Sunday
+        <input type="text" id="myText" value="Some text...">
+        <button onclick="textFunction(this.parentNode.parentNode.id, this.parentNode.id,'Sunday5')">Insert Text</button>
+        </div>
+        <div id="Monday5" class="col-sm-1" style="background-color:cyan;">Monday
+        <input type="text" id="myText" value="Some text...">
+        <button onclick="textFunction(this.parentNode.parentNode.id, this.parentNode.id,'Monday5')">Insert Text</button>
+        </div>
+        <div id="Tuesday5" class="col-sm-1" style="background-color:cyan;">Tuesday
+        <input type="text" id="myText" value="Some text...">
+        <button onclick="textFunction(this.parentNode.parentNode.id, this.parentNode.id,'Tuesday5')">Insert Text</button>
+        </div>
+        <div id="Wendsday5" class="col-sm-1" style="background-color:cyan;"></div>  
+        <div id="Thursday5" class="col-sm-1" style="background-color:cyan;"></div>
+        <div id="Friday5" class="col-sm-1" style="background-color:cyan;"></div>
+        <div id="Saturday5" class="col-sm-1" style="background-color:cyan;"></div>
     </div>
 </body>
 </html>
