@@ -28,7 +28,23 @@
        // }
        // else (document.getElementById("January").innerText="January"){
 
+// debugger;
        // }; 
+
+        var x= ["Sunday", "Monday", "Tuesday", "Wendsday", "Thursday", "Friday", "Saturday", "Sunday2", "Monday2", "Tuesday2", "Wendsday2", "Thursday2", "Friday2",         "Saturday2", "Sunday2", "Monday3", "Tuesday3", "Wendsday3", "Thursday3",        "Friday3","Saturday3", "Sunday4", "Monday4", "Tuesday4", "Wendsday4",           "Thursday4", "Friday4", "Saturday4", "Sunday5", "Monday5", "Tuesday5"]
+        // debugger;
+        for (var i =0; i < x.length; i++) {
+            // debugger;
+            console.log(document.getElementById(x[i]).innerText)
+            if ( document.getElementById(x[i]).innerText===x) {
+                (x[i]).innerText= "Some text...";
+            }
+
+            else if( document.getElementById(x[i]).innerText=== "Some text...") {
+                document.getElementById(x[i]).innerText= x;
+            }
+            
+        }
 
 
    }
